@@ -110,7 +110,7 @@ main "$@"
 ## Key Features
 
 ### Auto-Generated Help
-The `usage()` function parses the `#` comment block at the top of the script using `grep '^#' "$0" | cut -c 3-`. Update the header comments and the help menu updates automatically — no duplication.
+The `usage()` function parses the `#` comment block at the top of the script using `awk '/^# =/{p++;next} p==1{print}' "$0" | sed 's/^# //; s/^#$//'`. Update the header comments and the help menu updates automatically — no duplication.
 
 ### getopts Argument Parsing
 Uses POSIX `getopts` for flag parsing. Format: `while getopts ":hvf:" opt`. The `:` prefix silences errors (handled manually), and `f:` means `-f` takes a required argument.
