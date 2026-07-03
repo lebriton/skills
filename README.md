@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://skills.sh/b/lebriton/skills"><img src="https://skills.sh/b/lebriton/skills" alt="skills.sh"></a>
+  <a href="https://www.skills.sh/lebriton/skills"><img src="https://skills.sh/b/lebriton/skills" alt="skills.sh"></a>
 </p>
 
 <br>
