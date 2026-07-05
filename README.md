@@ -28,6 +28,9 @@
 ## Install
 
 ```bash
+npx skills add https://github.com/lebriton/skills
+
+# Install only specific skills
 npx skills add https://github.com/lebriton/skills --skill bash-scripting
 npx skills add https://github.com/lebriton/skills --skill git-workflow
 ```
