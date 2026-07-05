@@ -21,6 +21,7 @@
 ## Skills
 
 - **bash-scripting** — Write, debug, and optimize bash scripts
+- **git-workflow** — Strict Git rules: never auto-commit, use WIP between iterations, only commit on explicit user request
 
 <br>
 
@@ -28,6 +29,7 @@
 
 ```bash
 npx skills add https://github.com/lebriton/skills --skill bash-scripting
+npx skills add https://github.com/lebriton/skills --skill git-workflow
 ```
 
 <br>
