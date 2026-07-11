@@ -1,37 +1,29 @@
 ---
 name: git-workflow
-description: 'Checkpoint workflow for git: user-initiated commits, WIP save points between iterations, remote sync left to user.'
+description: 'Checkpoint workflow for git: WIP save points between iterations, real commits on explicit request only, remote sync left to user.'
 ---
 
 # Git Workflow
 
 ## Commit Rule
 
-Agent creates commits only on explicit user request.
+Two types of commits, two different rules:
 
-`--no-verify` is reserved for WIP checkpoints only. Real commits must run hooks.
+- **Checkpoint** — always. After every change, before the next user message or pause:
 
-Completion criterion: user's changes committed with a conventional commit message.
+  ```bash
+  git commit -am "WIP" --no-verify
+  ```
 
-## Checkpoint Rule
+- **Squash** — on explicit user request only. The agent writes the conventional commit message.
 
-After each iteration, before the next user message or pause:
+  ```bash
+  WIP_COUNT=$(git log --oneline | grep -c "^[a-f0-9]* WIP$")
+  git reset --soft HEAD~$WIP_COUNT
+  git commit -m "<conventional commit message>"
+  ```
 
-```bash
-git commit -am "WIP" --no-verify
-```
-
-Completion criterion: WIP commit created.
-
-## Squash Rule
-
-When the user requests a commit, squash all WIP checkpoints into a single commit:
-
-```bash
-WIP_COUNT=$(git log --oneline | grep -c "^[a-f0-9]* WIP$")
-git reset --soft HEAD~$WIP_COUNT
-git commit -m "<conventional commit message>"
-```
+`--no-verify` is reserved for WIP only.
 
 Completion criterion: no WIP commits remain in `git log`.
 
