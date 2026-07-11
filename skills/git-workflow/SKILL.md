@@ -30,7 +30,7 @@ When the user requests a commit, squash all WIP checkpoints into a single commit
 ```bash
 WIP_COUNT=$(git log --oneline | grep -c "^[a-f0-9]* WIP$")
 git reset --soft HEAD~$WIP_COUNT
-git commit -m "<user message>"
+git commit -m "<conventional commit message>"
 ```
 
 Completion criterion: no WIP commits remain in `git log`.
