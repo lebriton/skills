@@ -20,8 +20,8 @@
 
 ## Skills
 
-- **bash-scripting** — Write, debug, and optimize bash scripts
-- **git-workflow** — Strict Git rules: never auto-commit, use WIP between iterations, only commit on explicit user request
+- **bash-scripting** — Use when writing bash scripts.
+- **git-workflow** — Checkpoint workflow for git: user-initiated commits, WIP save points between iterations, remote sync left to user.
 
 <br>
 
