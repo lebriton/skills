@@ -22,6 +22,7 @@
 
 - **bash-scripting** — Use when writing bash scripts.
 - **git-workflow** — Checkpoint workflow for git: user-initiated commits, WIP save points between iterations, remote sync left to user.
+- **python-cli** — Python CLI scripts using argparse, standard library only.
 
 <br>
 
@@ -33,6 +34,7 @@ npx skills add https://github.com/lebriton/skills
 # Install only specific skills
 npx skills add https://github.com/lebriton/skills --skill bash-scripting
 npx skills add https://github.com/lebriton/skills --skill git-workflow
+npx skills add https://github.com/lebriton/skills --skill python-cli
 ```
 
 <br>
