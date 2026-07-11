@@ -9,7 +9,9 @@ description: 'Checkpoint workflow for git: user-initiated commits, WIP save poin
 
 Agent creates commits only on explicit user request.
 
-Completion criterion: user's changes committed with user's message.
+`--no-verify` is reserved for WIP checkpoints only. Real commits must run hooks.
+
+Completion criterion: user's changes committed with a conventional commit message.
 
 ## Checkpoint Rule
 
