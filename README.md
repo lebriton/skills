@@ -21,6 +21,7 @@
 ## Skills
 
 - **bash-scripting** — Use when writing bash scripts.
+- **check-requirements** — Template for a pre-flight script that verifies local development tools before project setup.
 - **git-workflow** — Checkpoint workflow for git: user-initiated commits, WIP save points between iterations, remote sync left to user.
 - **python-cli** — Python CLI scripts using argparse, standard library only.
 
@@ -33,6 +34,7 @@ npx skills add https://github.com/lebriton/skills
 
 # Install only specific skills
 npx skills add https://github.com/lebriton/skills --skill bash-scripting
+npx skills add https://github.com/lebriton/skills --skill check-requirements
 npx skills add https://github.com/lebriton/skills --skill git-workflow
 npx skills add https://github.com/lebriton/skills --skill python-cli
 ```
