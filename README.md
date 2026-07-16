@@ -21,8 +21,6 @@
 ## Skills
 
 - **bash-scripting** — Use when writing bash scripts.
-- **check-requirements** — Template for a pre-flight script that verifies local development tools before project setup.
-- **git-workflow** — Checkpoint git: fires on commit, push, or squash.
 - **justfile-conventions** — Justfile conventions for task ordering.
 - **python-cli** — Python CLI scripts using argparse, standard library only.
 - **rust-conventions** — Rust conventions for derive ordering, impl block structure, and method sorting.
@@ -36,8 +34,6 @@ npx skills add https://github.com/lebriton/skills
 
 # Install only specific skills
 npx skills add https://github.com/lebriton/skills --skill bash-scripting
-npx skills add https://github.com/lebriton/skills --skill check-requirements
-npx skills add https://github.com/lebriton/skills --skill git-workflow
 npx skills add https://github.com/lebriton/skills --skill justfile-conventions
 npx skills add https://github.com/lebriton/skills --skill python-cli
 npx skills add https://github.com/lebriton/skills --skill rust-conventions
